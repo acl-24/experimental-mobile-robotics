@@ -4,14 +4,17 @@
 
 ## Exercise 1
 
-This is the repository for CMPUT 503 Exercise 1, where lab_exercises is the package we created under packages. The exercise_1_script.py is under the lab_exercises package. This is the python program to run on the duckiebot to print a hello message.
+Under the subfolder exercise_1, lab_exercises is the package we created for this exercise. The exercise_1_script.py is under the lab_exercises package. This is the python program to run on the duckiebot to print a hello message.
  
 ### How to use it
 
-#### 1. building docker image on robot
+#### 1. locate the exercise 1 subfolder
+`cd exercise_1`
+
+#### 2. building docker image on robot
 `dts devel build -f --arch arm32v7 -H MY_ROBOT.local`
 
-#### 2. running program on robot
+#### 3. running program on robot
 `docker -H MY_ROBOT.local run -it --rm --net=host duckietown/my-program:latest-arm32v7`
 
 
